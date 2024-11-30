@@ -1,0 +1,15 @@
+<div class="flex flex-row">
+    @if (messageRole === 'user') {
+        <div 
+            class="flex flex-col p-6 mx-auto basis-1/2 text-right"
+            [innerHTML]="'<strong>' + 'User' + '</strong>' + messageContent">
+        </div>
+    }
+
+    @if (messageRole === 'assistant') {
+        <div 
+            class="flex flex-col p-6 mx-auto basis-1/2 text-left"
+            [innerHTML]="'<strong>' + 'Assistant' + '</strong>' + messageContent">
+        </div>
+    }
+</div>

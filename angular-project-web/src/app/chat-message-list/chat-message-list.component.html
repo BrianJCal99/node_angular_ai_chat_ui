@@ -1,0 +1,10 @@
+<div #chatContainer class="h-full overflow-y-auto scroll-smooth mx-auto scrollbar-custom">
+    @for (message of messageList; track message._id) {
+        <app-chat-message class="mb-4"
+        messageRole={{message.role}} 
+        messageContent={{message.content}}>
+        </ app-chat-message>
+        } @empty {
+        There are no messages.
+        }
+</div>

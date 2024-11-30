@@ -1,0 +1,23 @@
+/* Modern scrollbar styles for WebKit browsers */
+.scrollbar-custom::-webkit-scrollbar {
+    width: 8px;  /* Width of the scrollbar */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);  /* Background of the scrollbar track */
+    border-radius: 10px;  /* Rounded corners for the track */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);  /* Color of the scrollbar thumb */
+    border-radius: 10px;  /* Rounded corners for the thumb */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.7);  /* Darker thumb color on hover */
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.scrollbar-custom {
+    -ms-overflow-style: none;  /* Internet Explorer and Edge */
+}
